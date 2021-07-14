@@ -128,7 +128,7 @@ main {
 .player {
     width: 320px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 40px gray;
     padding: 15px;
     background-color: white;
     transition: transform .07s ease-in-out;
@@ -143,34 +143,41 @@ main {
 
 .leo-team {
     width: 80%;
-
     background-image: url(images/messi.jpg);
     padding: 20px 0;
-    color: white;
+    color: rgb(53, 11, 243);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
     margin: 30px auto 0 auto;
-    overflow: hidden;
+
 }
 
-leo-team>h1 {
+span {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+.leo-team>h1 {
     visibility: visible;
     color: darkblue;
     transition: transform 2s ease-out;
+    height: 400px;
 }
 
 .leo-team:hover {
     opacity: 0.8;
-    transform: scale3d(1.6);
+    transform: scale(1.6);
 }
-}
+
 
 .leo-team h1:hover {
     visibility: visible;
-    transform: translate(100%);
+    transform: translate3d(1.1);
 }
 
 /*--------- service part---------- */
