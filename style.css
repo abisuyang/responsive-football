@@ -5,7 +5,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
-    background-color: aqua;
+    background-color: white;
 }
 
 button {
@@ -113,10 +113,158 @@ main {
 
 }
 
-.players {
+.all-players {
     display: grid;
-    grid-template-columns: 3, 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 40px;
     width: 80%;
     grid-gap: 40px;
+}
+
+.player img {
+    width: 324px;
+}
+
+.player {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 15px;
+    background-color: white;
+    transition: transform .07s ease-in-out;
+}
+
+.player:hover {
+    transform: scale(1.1);
+
+}
+
+/*-------------- extra part------------- */
+
+.leo-team {
+    width: 80%;
+
+    background-image: url(images/messi.jpg);
+    padding: 20px 0;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+}
+
+leo-team>h1 {
+    visibility: visible;
+    color: darkblue;
+    transition: transform 2s ease-out;
+}
+
+.leo-team:hover {
+    opacity: 0.8;
+    transform: scale3d(1.6);
+}
+}
+
+.leo-team h1:hover {
+    visibility: visible;
+    transform: translate(100%);
+}
+
+/*--------- service part---------- */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.about>div>a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.about>div>a:hover {
+    color: coral;
+}
+
+
+/*---------- footer---------- */
+
+footer {
+    background-color: white;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.football-logo img {
+    width: 350px;
+    transition: transform(360deg);
+
+}
+
+.social-icon {
+    color: rgb(233, 241, 241);
+    margin: 10px;
+
+}
+
+.copyright {
+    color: rgba(red, green, blue, alpha);
+    font-size: 0.9em;
+}
+
+
+
+
+/*------------- media query for responsive------------- */
+
+@media only screen and (max-width: 700px) {
+    .header-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-box {
+        width: 100%;
+        margin: 30px 0;
+
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    .all-players {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (min-width:701px) and (max-width:1050px) {
+    .all-players {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+    }
 }
